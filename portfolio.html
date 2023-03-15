@@ -42,6 +42,13 @@
             </li>
           </ul>
         </nav>
+
+        <button type="button" class="button-menu-burger js-open-menu">
+          <svg class="burger-icon">
+            <use href="./images/svg/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+
         <address class="address">
           <ul class="address-container">
             <li class="contact-mail">
@@ -56,6 +63,66 @@
             </li>
           </ul>
         </address>
+        <div class="mobile-menu js-menu-container">
+          <button type="button" class="mobile-close js-close-menu">
+            <svg class="mobile-close-icon">
+              <use href="./images/svg/icons.svg#icon-close-btn"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-link">
+            <li class="mobile-nav-item">
+              <a class="mobile-nav-link current" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a class="mobile-nav-link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a class="mobile-nav-link" href="">Contacts</a>
+            </li>
+          </ul>
+          <ul class="mobile-address-container">
+            <li class="mobile-contact-mail">
+              <a class="mobile-contact-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="mobile-contact-phone">
+              <a class="mobile-contact" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-icons">
+            <li class="mobile-list">
+              <a class="mobile-link" href="">
+                <svg class="mobile-icon">
+                  <use href="./images/svg/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-list">
+              <a class="mobile-link" href="">
+                <svg class="mobile-icon">
+                  <use href="./images/svg/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-list">
+              <a class="mobile-link" href="">
+                <svg class="mobile-icon">
+                  <use href="./images/svg/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-list">
+              <a class="mobile-link" href="#">
+                <svg class="mobile-icon">
+                  <use href="./images/svg/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -85,8 +152,9 @@
               <a class="portfolio-link thumb-link" href="">
                 <div class="thumb">
                   <img
+                    srcset="./images/img-portfolio/img2x-1.webp x2"
                     class="portfolio-img"
-                    src="./images/img-portfolio/img.jpg"
+                    src="./images/img-portfolio/img-1.webp"
                     alt="banking-app"
                     width="360"
                     height="300"
@@ -112,7 +180,9 @@
               <a class="portfolio-link thumb-link" href="">
                 <div class="thumb">
                   <img
-                    src="./images/img-portfolio/img-1.jpg"
+                    srcset="./images/img-portfolio/img2x-2.webp x2"
+                    class="portfolio-img"
+                    src="./images/img-portfolio/img-2.webp"
                     alt="apple-pay"
                     width="360"
                     height="300"
@@ -138,7 +208,9 @@
               <a class="portfolio-link thumb-link" href="">
                 <div class="thumb">
                   <img
-                    src="./images/img-portfolio/img-2.jpg"
+                    srcset="./images/img-portfolio/img2x-3.webp x2"
+                    class="portfolio-img"
+                    src="./images/img-portfolio/img-3.webp"
                     alt="for-mac-iphone"
                     width="360"
                     height="300"
@@ -164,7 +236,9 @@
               <a class="portfolio-link thumb-link" href="">
                 <div class="thumb">
                   <img
-                    src="./images/img-portfolio/img-3.jpg"
+                    srcset="./images/img-portfolio/img2x-4.webp x2"
+                    class="portfolio-img"
+                    src="./images/img-portfolio/img-4.webp"
                     alt="taxi-service"
                     width="360"
                     height="300"
@@ -190,7 +264,9 @@
               <a class="portfolio-link thumb-link" href="">
                 <div class="thumb">
                   <img
-                    src="./images/img-portfolio/img-4.jpg"
+                    srcset="./images/img-portfolio/img2x-5.webp x2"
+                    class="portfolio-img"
+                    src="./images/img-portfolio/img-5.webp"
                     alt="screenshot"
                     width="360"
                     height="300"
@@ -216,7 +292,9 @@
               <a class="portfolio-link thumb-link" href="">
                 <div class="thumb">
                   <img
-                    src="./images/img-portfolio/img-5.jpg"
+                    srcset="./images/img-portfolio/img2x-6.webp x2"
+                    class="portfolio-img"
+                    src="./images/img-portfolio/img-6.webp"
                     alt="girl"
                     width="360"
                     height="300"
@@ -242,7 +320,9 @@
               <a class="portfolio-link thumb-link" href="">
                 <div class="thumb">
                   <img
-                    src="./images/img-portfolio/img-6.jpg"
+                    srcset="./images/img-portfolio/img2x-7.webp x2"
+                    class="portfolio-img"
+                    src="./images/img-portfolio/img-7.webp"
                     alt="instagram"
                     width="360"
                     height="300"
@@ -268,7 +348,9 @@
               <a class="portfolio-link thumb-link" href="">
                 <div class="thumb">
                   <img
-                    src="./images/img-portfolio/img-7.jpg"
+                    srcset="./images/img-portfolio/img2x-8.webp x2"
+                    class="portfolio-img"
+                    src="./images/img-portfolio/img-8.webp"
                     alt="organic-food"
                     width="360"
                     height="300"
@@ -294,7 +376,9 @@
               <a class="portfolio-link thumb-link" href="">
                 <div class="thumb">
                   <img
-                    src="./images/img-portfolio/img-8.jpg"
+                    srcset="./images/img-portfolio/img2x.webp x2"
+                    class="portfolio-img"
+                    src="./images/img-portfolio/img.webp"
                     alt="coffee"
                     width="360"
                   />
@@ -386,5 +470,15 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
+  <!-- <picture>
+    <source
+      srcset="
+        ./images/mobile/portfolio-mobile/img.webp,
+        ./images/mobile/portfolio-mobile/img.webp
+      "
+      media="(max-width: 767px)"
+    />
+  </picture> -->
 </html>
