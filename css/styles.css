@@ -92,11 +92,6 @@ a {
 /* ============MOBILE============= */
 
 @media screen and (min-width: 320px) {
-  body.mobile-menu {
-    overflow: hidden;
-  }
-}
-@media screen and (min-width: 320px) {
   .container {
     max-width: 767px;
     margin-right: auto;
@@ -120,10 +115,35 @@ a {
   .menu-link {
     display: none;
   }
+}
+@media screen and (max-width: 767px) {
   .address {
     display: none;
   }
 }
+@media screen and (min-width: 768px) {
+  .address-container {
+    font-size: 12px;
+    line-height: 116.666667%; /* 14/12 */
+  }
+}
+@media screen and (min-width: 1200px) {
+  .address-container {
+    font-size: 16px;
+    line-height: 150%; /* 24/16 */
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact-mail {
+    margin-bottom: 6px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-mail {
+    margin-bottom: 0;
+  }
+}
+
 .burger-icon {
   width: 32px;
   height: 22px;
@@ -200,6 +220,7 @@ a {
 .mobile-menu.is-open {
   transform: scalex(0);
 }
+
 .mobile-close {
   position: absolute;
   top: 24px;
@@ -244,6 +265,9 @@ a {
 }
 .mobile-nav-link {
   color: var(--paragraph-text-color);
+}
+.mobile-nav-link.current {
+  color: var(--botton-text-color);
 }
 .mobile-address-container {
   display: flex;
@@ -440,7 +464,6 @@ a {
 }
 @media screen and (min-width: 320px) {
   .hero-img {
-    margin-bottom: 96px;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -467,7 +490,6 @@ a {
 @media screen and (min-width: 768px) {
   .hero-img {
     max-width: 1199px;
-    margin-bottom: 96px;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -573,25 +595,18 @@ a {
   font-weight: 500;
 }
 /* =================PRIORITIES==================  */
+
+@media screen and (min-width: 320px) {
+  .priorities {
+    padding: 96px 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .priorities {
     padding-top: 120px;
     padding-bottom: 120px;
   }
 }
-/* @media screen and (min-width: 480px) {
-  .priorities-list {
-    display: flex;
-    flex-direction: column;
-    gap: 72px;
-  }
-} */
-
-/* @media screen and (min-width: 320px) {
-  .priorities-list .item:not(:last-child) {
-    margin-bottom: 72px;
-  }
-} */
 @media screen and (min-width: 320px) {
   .priorities-list {
     display: flex;
@@ -600,7 +615,6 @@ a {
     flex-wrap: wrap;
     row-gap: 72px;
     column-gap: 24px;
-    margin-bottom: 96px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -683,13 +697,10 @@ a {
 @media screen and (min-width: 1200px) {
   .work {
     display: flex;
+    padding-bottom: 120px;
+    padding-top: 120px;
   }
 }
-
-.work {
-  padding-bottom: 120px;
-}
-
 .work-title {
   text-transform: capitalize;
   font-weight: 700;
@@ -853,9 +864,17 @@ a {
     display: flex;
   }
 }
-.costomers-list .item {
-  width: 168px;
-  height: 88px;
+@media screen and (min-width: 320px) {
+  .costomers-list .item {
+    width: 190px;
+    height: 88px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .costomers-list .item {
+    width: 168px;
+    height: 88px;
+  }
 }
 .costomers-list .link {
   width: 100%;
@@ -1029,7 +1048,7 @@ a {
 }
 @media screen and (min-width: 320px) {
   .subscribe-input {
-    width: 398px;
+    width: 100%;
     height: 40px;
 
     margin-bottom: 16px;
@@ -1092,7 +1111,8 @@ a {
     padding-top: 48px;
     padding-bottom: 48px;
   }
-}@media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 1200px) {
   .buttons {
     padding-top: 96px;
     padding-bottom: 120px;
@@ -1164,13 +1184,13 @@ a {
     flex-wrap: wrap;
     column-gap: 24px;
   }
-}@media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 1200px) {
   .work-portfolio {
     justify-content: center;
   }
 }
 .portfolio-box {
- 
   box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
 }
 @media screen and (min-width: 768px) {
