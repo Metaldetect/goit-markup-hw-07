@@ -258,10 +258,12 @@ a {
   fill: var(--bgc-white-color);
 }
 .mobile-menu-link {
-  margin-bottom: 284px;
   display: flex;
   flex-direction: column;
   gap: 40px;
+  width: 100%;
+  height: 100%;
+  
 }
 .mobile-nav-item {
   font-weight: 700;
