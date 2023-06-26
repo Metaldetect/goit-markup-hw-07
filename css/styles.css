@@ -878,6 +878,7 @@ a {
   .footer-container {
     display: flex;
     flex-wrap: wrap;
+    width: 1155px;
   }
 }
 
